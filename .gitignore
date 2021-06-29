@@ -1,0 +1,6 @@
+server/node_modules
+server/.DS_Store
+server/build
+server/public
+server/buildTemp
+server/publicTemp
