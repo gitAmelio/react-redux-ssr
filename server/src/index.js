@@ -21,8 +21,8 @@ app.get('*', (req, res) => {
 
     Promise.all(promises).then(() => {
         res.send(renderer(req, store));
-    })
-});
+    }).catch(error => console.log(error))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+});         
 
 app.listen(3000, () => {
     console.log('Listening on port 3000')
