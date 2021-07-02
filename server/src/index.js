@@ -40,10 +40,6 @@ app.get('*', (req, res) => {
         const content = renderer(req, store, context);
 
         // if not logged in
-
-        console.log('req.path',req.path)
-        console.log('context',context)
-        console.log('content',content)
         if (context.url) {
             return res.redirect(301, context.url);
         }
